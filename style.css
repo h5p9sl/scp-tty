@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+}
+
+input {
+    padding: 3px;
+    margin: 3px;
+
+    border: 3px solid #111;
+    border-bottom: 3px solid red;
+    text-align: center;
+
+    background-color: white;
+}
+
+input[type=text], input[type=password] {
+    background-image: url('/img/black_scp_emblem.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+input[type=submit] {
+    text-decoration: none;
+    border: none;
+}
+
+input:focus {
+    border: 3px solid red;
+}
+
+section {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+
+    margin-bottom: 25px;
+    background-color: #100a10;
+
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 0px;
+}
+
+a {
+    color: red;
+}
+
+table {
+    width: 100%;
+}
+td {
+    width: auto;
+    margin: auto;
+}
+
+.rightmost {
+    text-align: right;
+}
+.leftmost {
+    text-align: left;
+}
+.infobox {
+    float: right;
+    clear: right;
+    border: 1px white solid;
+    padding: 5px;
+    margin: 5px;
+}
