@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>SCP/TTY<?php
+<title>SCP-TTY<?php
 if (isset($pagetitle)) {
     echo ' - '. htmlspecialchars($pagetitle);
 }

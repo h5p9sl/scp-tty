@@ -3,9 +3,9 @@
 <table width=100%>
 <tr>
 <td class=leftmost>
-<a href="index.php">Home</a>
-<a href="resources.php">Resources</a>
-<a href="personnel.php?id=<?php echo $_SESSION['uid']; ?>">Personnel</a>
+<a href="index.php">/Home</a>
+<a href="resources.php">/Resources</a>
+<?php //<a href="personnel.php?id=<?php echo $_SESSION['uid']; ?\>">/Personnel</a>?>
 </td>
 
 <td class=rightmost>

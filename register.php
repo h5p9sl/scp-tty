@@ -77,7 +77,7 @@ if (
 </form>
 
 </td><td>
-<h3>How to request SCP/TTY authorization</h3>
+<h3>How to request SCP-TTY authorization</h3>
 <ol>
     <li>Type your personnel ID in the "ID" box. (ex. dr_john-mack)</li>
     <li>Generate a <a href=register.php?rngpw>foundation standard passphrase</a> and memorize it.</li>
@@ -94,7 +94,7 @@ if (
 function rngpw() {
     $delim = ' -_+/%';
     $num_words = 2;
-    $num_passwords_to_gen = 2;
+    $num_passwords_to_gen = 5;
     $words = preg_replace('/\ /', '', preg_split('/\n/', file_get_contents('words.txt')));
     $passwords = [];
 

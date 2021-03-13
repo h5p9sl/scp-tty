@@ -1,5 +1,5 @@
 <?php
-$cfg_ini = parse_ini_file('/var/www/cranscp.ini', true);
+$cfg_ini = parse_ini_file('/var/www/scp.ini', true);
 $dbcfg = $cfg_ini['mysql_credentials'];
 
 $db_server = $dbcfg['server'];

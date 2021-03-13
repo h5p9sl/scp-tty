@@ -1,0 +1,6 @@
+{
+    "require": {
+        "erusev/parsedown": "1.7.4",
+        "sebastian/diff": "^4.0"
+    }
+}

@@ -16,31 +16,34 @@ include 'hacks/hotbar.php';         // Hotbar for easy user navigation
 
 <td>
 <h3>Peer Discussion</h3>
-<small>Discussion may be monitored by your surperiors</small><br>
 </td>
 </tr>
 
 <tr>
 
 <td class=leftmost style="vertical-align: top">
-<a href="document.php?id=8942">SCP-8942</a> "Cran"<br>
-<a href="document.php?id=8942?sub=1">SCP-8942-1</a> "Cranfiles"<br>
-<h3>Request Document</h3>
-<input type=text></input>
-<input type=submit value="Request"></input>
-</td>
+
+<?php
+    include_once 'db.php';
+    $result = mysqli_query($db, 'SELECT * FROM `documents` ORDER BY creation_date ASC');
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo '<a href="document.php?id='.
+            $row['id'] .'">'.
+            $row['title'] .'</a> "'.
+            $row['subtitle'] .'"<br>';
+    }
+?>
 
 <td>
-<div class=chat style="background-color: black; text-align: left; overflow: scroll; height: 400px">
-Person01: Hello World!<br>
-Person02: Yo!<br>
-</div>
-<input type=text></input>
-<input type=submit></input>
+
+<form method=POST>
+<input style="text-align: left; width: 80%" name=message type=text autofocus="autofocus" onfocus="this.select()"></input>
+<input type=submit value="Send"></input>
+</form>
+<?php include_once 'chat.php'?>
+
 </td>
-
 </tr>
-
 </table>
 </section>
 

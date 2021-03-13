@@ -16,12 +16,16 @@ input {
     background-color: white;
 }
 
-input[type=text], input[type=password] {
+textarea, input[type=text], input[type=password] {
     background-image: url('/img/black_scp_emblem.png');
     background-repeat: no-repeat;
     background-size: 25px;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+textarea {
+    padding-top: 25px;
 }
 
 input[type=submit] {
@@ -34,10 +38,11 @@ input:focus {
 }
 
 section {
+    overflow: auto;
     width: 80%;
     height: auto;
     margin: auto;
-    padding: 10px;
+    padding: 25px;
 
     margin-bottom: 25px;
     background-color: #100a10;
@@ -72,4 +77,45 @@ td {
     border: 1px white solid;
     padding: 5px;
     margin: 5px;
+}
+
+div.chat {
+    padding: 10px;
+    background-color: black;
+    text-align: left;
+    overflow: auto;
+    height: 400px;
+    word-wrap: anywhere;
+}
+
+p.message {
+    margin: auto;
+}
+
+.Keter {
+    background-color: red;
+    color: white;
+}
+.Euclid {
+    background-color: orangered;
+    color: white;
+}
+.Safe {
+    background-color: green;
+    color: white;
+}
+.Dark .Notice .Unrestricted {
+    background-color: green;
+}
+.Vlam .Caution .Restricted {
+    background-color: blue;
+}
+.Keneq .Warning .Confidential {
+    background-color: yellow;
+}
+.Ekhi .Danger .Secret {
+    background-color: orange;
+}
+.Amida .Critical [.Top Secret] {
+    background-color: red;
 }
